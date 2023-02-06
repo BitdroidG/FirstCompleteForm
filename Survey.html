@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey</title>
+        <link rel="stylesheet" href="Survey.css">
+    </head>
+<body>
+    <h1 id="title">Gamer Card</h1>
+    <p class="description" id="description">Please share your gaming Journey with us!!</p>
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name:<input placeholder="Your Name" required type="text" id="name"/></label>
+            <label for="email" id="email-label">Email:<input placeholder="Email@mail.com" required type="email" id="email"/></label>
+            <label for="number" id="number-label">Number:<input min="0" max="9999" placeholder="Your Number" type="number" id="number"/></label>
+        </fieldset>
+        <fieldset>
+            <p>How long have you been gaming?</p>
+            <select id="dropdown">
+                <option>Your XP Level</option>
+                <option>Beginner (lvl 1+)</option>
+                <option>1 - 2 years (lvl 15+)</option>
+                <option>2 - 5 years (lvl 35+)</option>
+                <option>5 - 10 years (lvl 55+)</option>
+                <option>Over 10 years (lvl 75+)</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <p>How many hours do you game per week?</p>
+            <label for="radios"><input class="inline"  name="radio" id="radios" type="radio"/>Less than 5 hours</label>
+            <label for="radios"><input class="inline"  name="radio" id="radios" type="radio"/>Less than 10 hours</label>
+            <label for="radios"><input class="inline"  name="radio" id="radios" type="radio"/>Less than 20 hours</label>
+            <label for="radios"><input class="inline"  name="radio" id="radios" type="radio"/>Less than 30 hours</label>
+            <label for="radios"><input class="inline"  name="radio" id="radios" type="radio"/>Less than 40 hours</label>
+            <label for="radios"><input class="inline"  name="radio" id="radios" type="radio"/>A lot...</label>
+        </fieldset>
+        <fieldset>
+            <p>What types of game do you play?</p>
+           <label for="action"><input class="inline"  name="game" id="action" value="action" type="checkbox"/>Action</label>
+           <label for="adventure"><input class="inline"  name="game" id="adventure" value="adventure" type="checkbox"/>Adventure</label>
+           <label for="rpg"><input class="inline"  name="game" id="rpg" value="rpg" type="checkbox"/>RPG's</label>
+           <label for="simulation"><input class="inline"  name="game" id="simulation" value="simulation" type="checkbox"/>Simulation</label>
+           <label for="strategy"><input class="inline"  name="game" id="strategy" value="strategy" type="checkbox"/>Strategy</label>
+           <label for="sports"><input class="inline"  name="game" id="sports" value="sports" type="checkbox"/>Sports</label>
+           <label for="puzzle"><input class="inline" name="game" id="puzzle" value="puzzle" type="checkbox"/>Puzzle</label>
+        </fieldset>
+        <fieldset>
+            <p>Anything you want to add?</p>
+            <textarea rows="5" cols="50"></textarea>
+        </fieldset>
+        <input type="submit" id="submit"/>
+    </form>
+</body>
